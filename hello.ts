@@ -10,5 +10,6 @@ app.get("/mongo", async (c) => {
   const result = await db.insertOne({ hello: "world" });
   c.json(result);
 });
+console.log("server start...");
 
 serve(app.fetch);
